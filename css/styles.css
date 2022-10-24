@@ -1,0 +1,247 @@
+/* основні кольори 
+ колір заголовку #212121
+ колір основного тексту #757575
+ акцент #2196F3;
+ другий корір заголовку #FFFFFF
+ колір лого #000000
+ тф та пошта в  rgba(255, 255, 255, 0.6) */
+
+ :root {
+    --primary-title-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+    --secondary-title-color: #FFFFFF;
+    --contacts-color: rgba(255, 255, 255, 0.6); 
+    --bg-color-accent: #2F303A;
+    --bg-color-primary: #F5F5F5;
+    --bg-color-secondary: #F5F4FA;
+ }
+ body {
+   background-color:var(--secondary-title-color);
+   color: var(--text-color);   
+   font-family: 'Roboto', sans-serif;
+ }
+ 
+
+ /* Логотип */
+ 
+.logo {
+   color: var(--accent-color);
+   text-decoration: none;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
+ }
+ .logo-header {
+   color: #000;
+ }
+/* Навігація */
+.list-nav {
+   list-style-type: none;   
+}
+.link {
+   text-decoration: none;
+   color: var(--primary-title-color);
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+}
+.list-contact {   
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus,
+.contact:hover,
+.contact:focus
+{
+   color: var(--accent-color);
+}
+.link.current {
+   color: var(--accent-color);
+}
+ 
+/* Контакти*/
+.list-contact,
+.list-feature,
+.list-activity,
+.list-team,
+.list-address {
+   list-style: none;
+}
+.contact {
+   text-decoration: none;
+   color: inherit;
+}
+
+
+/* Герой */
+
+.hero {
+   background-color: var(--bg-color-accent);
+}
+.hero-title {
+   color: var(--secondary-title-color);
+   text-transform: uppercase;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.5;
+   text-align: center;
+   letter-spacing: 0.06em;
+}
+.btn {
+   background-color: var(--accent-color);
+   color: var(--secondary-title-color);
+   cursor: pointer;
+   font-family: inherit;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.8;
+   text-align: center;
+   letter-spacing: 0.06em;
+}
+.btn:hover,
+.btn:focus {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+ /* Особливості*/
+ .title-feature {
+   color: var(--primary-title-color);
+   text-transform: uppercase;  
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;      
+ } 
+ .text-feature {
+   
+   font-size: 14px;
+   line-height: 2.1;
+   letter-spacing: 0.03em;
+ }
+ /*Чим ми займаємося*/
+ .title-activity {
+   color: var(--primary-title-color);  
+   font-size: 36px;
+   line-height:1.2;
+   text-align: center;
+   letter-spacing: 0.03em;
+ }
+
+ /*Наша команда*/
+.team {
+   background-color: var(--bg-color-secondary);
+}
+.title-team {
+   color: var(--primary-title-color);   
+   font-size: 36px;
+   line-height: 1.2;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+.team-name-member {
+   color: var(--primary-title-color);
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height:1.2;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+.job-title {
+   
+   font-size: 16px;
+   line-height: 1.2;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+
+/*Підвал*/
+.footer {
+   background-color: var(--bg-color-accent);
+}
+.logo-footer {
+  text-decoration: none; 
+  color: var(--secondary-title-color);
+}
+.map-address {
+   color: var(--secondary-title-color);
+   text-decoration: none;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.link-address {
+   color: rgba(255, 255, 255, 0.6);
+   text-decoration: none;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+
+}
+.link-address:hover,
+.link-address:focus,
+.map-address:hover,
+.map-address:focus {
+   color: var(--accent-color);
+}
+
+/* СТОРІНКА ПОРТФОЛІО*/
+.list-filter,
+.list-projects {
+   list-style: none;
+}
+.filter-btn {
+ background-color: var(--bg-color-secondary);
+ color: var(--primary-title-color);
+   cursor: pointer;
+   font-family: inherit;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height:1.5;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+.filter-btn:hover, 
+.filter-btn:focus {
+   background-color: var(--accent-color);
+   color: var(--secondary-title-color);
+}
+.project-name {
+   color: var(--primary-title-color);
+  
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+.project-filter {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.8;
+   letter-spacing: 0.03em;
+}
+
+
+
+
+
+
+
+
+
+ 
